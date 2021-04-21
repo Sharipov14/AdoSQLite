@@ -72,5 +72,10 @@ namespace AdoSQLite
             DAL.SQLiteHelper.DeleteUser(id: usUserEdit1.User?.Id ?? 0);
             UpdateTable();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

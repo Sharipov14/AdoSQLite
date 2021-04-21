@@ -34,11 +34,11 @@ namespace AdoSQLite
             this.btnUbdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bsUser = new System.Windows.Forms.BindingSource(this.components);
-            this.usUserEdit1 = new AdoSQLite.usUserEdit();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.usUserEdit1 = new AdoSQLite.usUserEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsUser)).BeginInit();
@@ -93,15 +93,6 @@ namespace AdoSQLite
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // usUserEdit1
-            // 
-            this.usUserEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usUserEdit1.Location = new System.Drawing.Point(3, 3);
-            this.usUserEdit1.Name = "usUserEdit1";
-            this.usUserEdit1.Size = new System.Drawing.Size(238, 402);
-            this.usUserEdit1.TabIndex = 2;
-            this.usUserEdit1.User = null;
-            // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
@@ -149,6 +140,15 @@ namespace AdoSQLite
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // usUserEdit1
+            // 
+            this.usUserEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.usUserEdit1.Location = new System.Drawing.Point(3, 3);
+            this.usUserEdit1.Name = "usUserEdit1";
+            this.usUserEdit1.Size = new System.Drawing.Size(238, 402);
+            this.usUserEdit1.TabIndex = 2;
+            this.usUserEdit1.User = null;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,6 +157,7 @@ namespace AdoSQLite
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsUser)).EndInit();

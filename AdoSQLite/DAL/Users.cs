@@ -22,17 +22,20 @@ namespace AdoSQLite.DAL
             //youre code for disposing
         }
 
+        [Browsable(false)]
         public BindingContext BindingContext
         {
             get { return bindingContext; }
             set { bindingContext = value; }
         }
 
+        [Browsable(false)]
         public ControlBindingsCollection DataBindings
         {
             get { return dataBindings; }
         }
 
+        [Browsable(false)]
         public ISite Site
         {
             get { return iSit; }
